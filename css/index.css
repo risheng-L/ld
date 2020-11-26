@@ -1,0 +1,281 @@
+html {
+  font-size: 10px;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  position: relative;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background-color: #ff8a00;
+}
+header .header-box {
+  padding-top: 0.5rem;
+  margin: 0 3rem;
+}
+header .header-box img {
+  height: 3rem;
+}
+header .header-box img:nth-child(2) {
+  margin: 0 1.8rem 0 9rem;
+}
+.seach {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #d7d7d7;
+  background-color: #fff;
+}
+.seach span {
+  display: inline-block;
+  margin: 0 1.5rem 0 5rem;
+}
+.seach img {
+  height: 2rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+.seach input {
+  font-size: 1.4rem;
+  color: #b3b3b3;
+  border: none;
+  outline: none;
+}
+nav {
+  position: relative;
+}
+nav .list {
+  display: flex;
+  padding: 1rem 0.7rem 1rem 1.5rem;
+  background-color: #fff;
+  border: 0.1rem solid #d7d7d7;
+}
+nav .list li {
+  position: relative;
+  margin-right: 5rem;
+}
+nav .list li div:nth-child(1) {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #8a8073;
+}
+nav .list li .main {
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 3.5rem;
+  top: 0rem;
+  border-right: 0.2rem solid #d7d7d7;
+  border-bottom: 0.2rem solid #d7d7d7;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+nav .list li .mains {
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 3.5rem;
+  top: 0rem;
+  transition: all 0.5s;
+  transform: rotate(225deg);
+  border-right: 0.2rem solid #ff9d3a;
+  border-bottom: 0.2rem solid #ff9d3a;
+}
+nav .list li:nth-child(4) {
+  margin-right: 0;
+}
+nav .qy {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  left: 0rem;
+  top: 4.2rem;
+}
+nav .qy ul {
+  box-sizing: border-box;
+  float: left;
+}
+nav .qy ul li {
+  text-align: center;
+  padding: 0.8rem 0;
+  background-color: #fff;
+}
+nav .qy ul li a {
+  font-size: 1.2rem;
+  color: #6a6a6c;
+}
+nav .qy ul:nth-of-type(1) a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #000;
+}
+nav .qy ul:nth-of-type(1) {
+  width: 20%;
+}
+nav .qy ul:nth-of-type(3),
+nav .qy ul:nth-of-type(2) {
+  width: 40%;
+}
+nav .pice {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  left: 0rem;
+  top: 4.2rem;
+}
+nav .pice ul {
+  background-color: #fff;
+}
+nav .pice ul li {
+  padding: 0.8rem 0;
+  margin: 0 1.5rem;
+  border-bottom: 1px solid #d4d4d4;
+}
+nav .pice ul li a {
+  color: #8c8c8c;
+}
+nav .home {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  left: 0rem;
+  top: 4.2rem;
+}
+nav .home ul {
+  background-color: #fff;
+  padding-bottom: 1.5rem;
+}
+nav .home ul li {
+  padding: 0.8rem 0;
+  margin: 0 1.5rem;
+  border-bottom: 1px solid #d4d4d4;
+  overflow: hidden;
+}
+nav .home ul li input {
+  float: right;
+  margin-right: 1rem;
+}
+nav .home ul li:nth-child(6) {
+  border-bottom: none;
+}
+nav .home ul li:nth-child(7) {
+  border: 1px solid;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background-color: #FF8A00;
+  border: none;
+  color: white;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+nav .more {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  background-color: #fff;
+  font-size: 1.2rem;
+  width: 100%;
+  left: 0rem;
+  top: 4.2rem;
+}
+nav .more .plus {
+  padding: 0.8rem 0;
+  margin: 0 1.5rem;
+}
+nav .more .plus p {
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+nav .more .plus .content {
+  overflow: hidden;
+  text-align: center;
+  border-bottom: 1px solid #d4d4d4;
+}
+nav .more .plus .content li {
+  float: left;
+  width: 23.2%;
+  padding: 0.5rem 0;
+  border: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  margin: 0 0.5rem 1rem 0;
+}
+article ul li {
+  overflow: hidden;
+  margin: 0rem 2rem;
+  padding: 2.5rem 0;
+  border-bottom: 0.2rem #ff8a00 solid;
+}
+article ul li .img {
+  float: left;
+  margin-right: 1rem;
+}
+article ul li .img img {
+  height: 8rem;
+}
+article ul li .right {
+  float: left;
+  font-size: 1.2rem;
+}
+article ul li .right p {
+  color: #c0c7c8;
+  margin-top: 0.2rem;
+}
+article ul li .right p a {
+  color: #fc9413;
+  font-weight: bold;
+}
+article ul li .right p:nth-of-type(1) {
+  margin-top: 1.3rem;
+  color: black;
+}
+article ul li:nth-of-type(3) {
+  border-bottom: none;
+}
+footer {
+  width: 100%;
+  background-color: #2f3130;
+  color: #939487;
+  padding-bottom: 0.5rem;
+}
+footer .index {
+  padding: 1rem 0;
+  margin: 0 1.5rem;
+  font-size: 1.4rem;
+  border-bottom: 0.1rem solid #929393;
+}
+footer .index a {
+  color: #939487;
+}
+footer .ipa {
+  font-size: 1.3rem;
+  overflow: hidden;
+  margin: 1.5rem 0 0rem 1.5rem;
+}
+footer .ipa .iphone {
+  float: left;
+  overflow: hidden;
+}
+footer .ipa .iphone img {
+  height: 2.5rem;
+  float: left;
+  margin-right: 2rem;
+}
+footer .ipa .iphone .p {
+  float: left;
+}
+footer .ipa .android {
+  margin-right: 6rem;
+}
+footer .f-p {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 2rem;
+}

@@ -1,0 +1,250 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+html {
+  font-size: 10px;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background-color: #ff8a00;
+}
+header .header-box {
+  padding-top: 0.5rem;
+  margin: 0 3rem;
+}
+header .header-box img {
+  height: 3rem;
+}
+header .header-box img:nth-child(2) {
+  margin: 0 1.8rem 0 9rem;
+}
+.bg {
+  position: relative;
+}
+.bg .bg1 {
+  width: 100%;
+}
+.bg span {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 4rem;
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border: 0.1rem solid #9a9a9a;
+  border-radius: 0.3rem;
+  background-color: #fff;
+  box-shadow: -0.1rem -0.1rem 0.2rem 0 #0e0e0e;
+}
+.bg span img {
+  height: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.bg span input {
+  width: 20rem;
+  outline: none;
+  border: 0;
+  font-size: 1.3rem;
+  color: #797979;
+}
+.icon ul {
+  background-color: #ff8a00;
+  padding: 1.5rem 1rem;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+}
+.icon ul li img {
+  height: 6rem;
+}
+.icon ul li p {
+  text-align: center;
+}
+.banner {
+  margin-top: 1rem;
+}
+.banner img {
+  width: 100%;
+}
+.hot {
+  margin-top: 1rem;
+  background-color: #ff8a00;
+  height: 6rem;
+  color: #fff;
+}
+.hot h1 {
+  padding-top: 1rem;
+  margin-left: 1.5rem;
+}
+.hot h3 {
+  margin-left: 1.5rem;
+}
+article ul {
+  background-color: #fff;
+}
+article ul li {
+  overflow: hidden;
+  margin: 0rem 2rem;
+  padding: 2.5rem 0;
+  border-bottom: 0.2rem #ff2626 solid;
+}
+article ul li .img {
+  float: left;
+  margin-right: 1rem;
+}
+article ul li .img img {
+  height: 8rem;
+}
+article ul li .right {
+  float: left;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+article ul li .right h2 {
+  width: 18rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+article ul li .right p {
+  color: #0e0e0e;
+  margin: 0.3rem 0;
+}
+article ul li .right p a {
+  color: #fc9413;
+  font-weight: bold;
+  float: right;
+}
+article ul li .right div {
+  margin: 0.2rem;
+  color: #8e8e8e;
+  overflow: hidden;
+}
+article ul li .right div a {
+  color: #8e8e8e;
+  float: right;
+}
+article ul li .right span {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+article ul li .right span a {
+  padding: 0.2rem;
+  color: #869baf;
+  background-color: #f4f7f9;
+}
+article ul li .right span a:nth-child(1) {
+  margin-right: 0.5rem;
+}
+article ul li:nth-of-type(3) {
+  border-bottom: none;
+}
+section {
+  margin-top: 1rem;
+  color: #7d7d7d;
+  background-color: #fff;
+}
+section .one {
+  border-bottom: 0.1rem solid #ff8a00;
+}
+section .one a {
+  font-size: 1.6rem;
+  width: 49%;
+  height: 5.5rem;
+  color: #7d7d7d;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+section .one a:nth-child(1) {
+  color: #ff8a00;
+  border-bottom: 0.1rem solid #ff8a00;
+}
+section .two {
+  overflow: hidden;
+}
+section .two ul {
+  float: left;
+  width: 50%;
+  padding-top: 1.5rem;
+}
+section .two ul li {
+  margin-left: 2rem;
+  padding-bottom: 1.5rem;
+}
+footer {
+  width: 100%;
+  background-color: #2f3130;
+  color: #939487;
+  padding-bottom: 0.5rem;
+}
+footer .index {
+  padding: 1rem 0;
+  margin: 0 1.5rem;
+  font-size: 1.4rem;
+  border-bottom: 0.1rem solid #929393;
+}
+footer .index a {
+  color: #939487;
+}
+footer .ipa {
+  font-size: 1.3rem;
+  overflow: hidden;
+  margin: 1.5rem 0 0rem 1.5rem;
+}
+footer .ipa .iphone {
+  float: left;
+  overflow: hidden;
+}
+footer .ipa .iphone img {
+  height: 2.5rem;
+  float: left;
+  margin-right: 2rem;
+}
+footer .ipa .iphone .p {
+  float: left;
+}
+footer .ipa .android {
+  margin-right: 6rem;
+}
+footer .f-p {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  color: #cacaca;
+  height: 4.5rem;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #000;
+  opacity: 0.8;
+}
+.fixed img {
+  height: 3rem;
+  margin-top: 0.8rem;
+}
+.fixed .f-font h1 {
+  font-weight: normal;
+}
+.fixed .f-font p {
+  font-size: 1.3rem;
+}
+.fixed .orag {
+  width: 10rem;
+  height: 4.5rem;
+  color: #fff;
+  font-size: 1.4rem;
+  background-color: #ff8a00;
+  text-align: center;
+  line-height: 4.5rem;
+}
