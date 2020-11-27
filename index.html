@@ -221,59 +221,65 @@
     <script src="js/zepto.js"></script>
     <script src="js/jquery.min.js"></script>
     <script>
-        var i = 0;
+        // var i = 0;
+        // function house(a,b){
+        //     i++;
+        //     if (i % 2 != 0) {
+        //         $('.'+b).css('color', '#ff8a00');
+        //         $('.'+b).next().addClass('mains');
+        //         $('.'+a).show();
+
+        //     } else {
+        //         $('.'+b).css('color', '#8a8073');
+        //         $('.'+b).next().removeClass('mains');
+        //         $('.'+a).hide();
+        //     }
+        // }
+        function hide(a, b) {
+            var h = $('.' + b).parents('.list').siblings();
+            if (h.is(':hidden')) {
+                $('.' + b).css('color', '#ff8a00');
+                $('.' + b).parent().siblings().find('div:nth-child(1)').css('color', '#8a8073');
+                $('.' + b).next().addClass('mains');
+                $('.' + b).parent().siblings().children('.main').removeClass('mains');
+                $('.' + a).show();
+                $('.' + a).siblings('div').hide();
+                return false;
+            }
+            else if (h.is(':visible')) {
+                $('.' + b).css('color', '#ff8a00');
+                $('.' + b).parent().siblings().find('div:nth-child(1)').css('color', '#8a8073');
+                $('.' + b).next().addClass('mains');
+                $('.' + b).parent().siblings().children('.main').removeClass('mains');
+                $('.' + a).hide();
+                $('.' + a).siblings('div').show();
+            }
+        }
 
         $('.address').on('touchstart', function () {
-            i++;
-            if (i % 2 != 0) {
-                $(this).css('color', '#ff8a00');
-                $(this).next().toggleClass('mains');
-                $('.qy').show();
+            var a = 'qy';
+            var b = 'address';
+            // house(a,b);
+            hide(a, b);
 
-            } else {
-                $(this).css('color', '#8a8073');
-                $(this).next().removeClass('mains');
-                $('.qy').hide();
-            }
         })
         $('.price').on('touchstart', function () {
-            i++;
-            if (i % 2 != 0) {
-                $(this).css('color', '#ff8a00');
-                $(this).next().toggleClass('mains');
-                $('.pice').show();
-
-            } else {
-                $(this).css('color', '#8a8073');
-                $(this).next().removeClass('mains');
-                $('.pice').hide();
-            }
+            var a = 'pice';
+            var b = 'price';
+            // house(a,b);
+            hide(a, b);
         })
         $('.sort').on('touchstart', function () {
-            i++;
-            if (i % 2 != 0) {
-                $(this).css('color', '#ff8a00');
-                $(this).next().toggleClass('mains');
-                $('.home').show();
-
-            } else {
-                $(this).css('color', '#8a8073');
-                $(this).next().removeClass('mains');
-                $('.home').hide();
-            }
+            var a = 'home';
+            var b = 'sort';
+            // house(a,b);
+            hide(a, b);
         })
         $('.more1').on('touchstart', function () {
-            i++;
-            if (i % 2 != 0) {
-                $(this).css('color', '#ff8a00');
-                $(this).next().toggleClass('mains');
-                $('.more').show();
-
-            } else {
-                $(this).css('color', '#8a8073');
-                $(this).next().removeClass('mains');
-                $('.more').hide();
-            }
+            var a = 'more';
+            var b = 'more1';
+            // house(a,b);
+            hide(a, b);
         })
 
 

@@ -145,6 +145,21 @@
         </div>
         <div class="orag">免费下载</div>
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        var timer = null;
+        function abc() {
+            $('.x').on('touchstart', function () {
+                $(this).parent('.fixed').hide();
+                timer = setInterval(function () {
+                    clearInterval(timer);
+                    $('.fixed').show();
+                }, 3000);
+            })
+        }
+        abc();
+    </script>
+
 </body>
 
 </html>
